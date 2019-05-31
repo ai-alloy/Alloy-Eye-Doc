@@ -18,6 +18,5 @@
 * [功能API](api-intro.md)
     * [通用GPIO](function/gpio.md)
     * [多功能FPIOA](function/fpioa.md)
-* [其它](other/qi-ta.md)
 * [联系](other/about.md)
 
