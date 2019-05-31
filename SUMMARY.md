@@ -1,7 +1,7 @@
 # Summary
 
 * [简介](README.md)
-* [硬件](README.md)
+* [硬件](hardware/README.md)
 * [准备](ready/ready.md)
 * [上手](start/shang-shou.md)
 * [功能API](function/README.md)
