@@ -40,7 +40,7 @@ github会有提供相关样例，包括src目录和build目录，但不是完整
 
 ### 5、下载Kflash烧录工具
 
-此Kflash工具是windows版本（Kflash支持windows和linux的两种方式），用于windows下下载固件到开发板
+此Kflash工具是windows版本（Kflash支持windows和linux两种方式），用于windows下下载固件到开发板
 
 - [ ] [windows版本Kflash下载](https://s3.cn-north-1.amazonaws.com.cn/dl.kendryte.com/documents/K-Flash.zip)
 
