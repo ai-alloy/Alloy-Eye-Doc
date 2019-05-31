@@ -1,5 +1,3 @@
-#### 编译
-
 进入build目录下执行./getbin.sh xxx；xxx指代src下的项目名称，比如项目名称是hello_world
 
 执行./getbin.sh hello_world

@@ -1,5 +1,3 @@
-开始第一份代码
-
 在src目录下新建项目文件夹，比如新建hello_world，在此文件下放置源代码
 
 cd src && mkdir hello_world

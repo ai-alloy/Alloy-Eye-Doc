@@ -1,5 +1,3 @@
-SDK代码结构
-
 ![](/images/sdk-tree.png)
 
 build:编译中间件、固件、编译脚本存放处；
