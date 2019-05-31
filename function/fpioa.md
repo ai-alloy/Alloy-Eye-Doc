@@ -4,7 +4,5 @@
 
 ## API说明
 
-##交流与答疑
 
-欢迎交流,请访问 [官网](http://www.ai-alloy.com/) <http://www.ai-alloy.com>
 
