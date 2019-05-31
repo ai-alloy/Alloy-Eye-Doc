@@ -8,7 +8,7 @@
     - [外设配件](hardware/ext.md)
 * [准备](ready-intro.md)
     - [获取开发板](ready/get-board.md)
-    - [开发环境搭建](ready/ready.md)
+    - [开发环境搭建](ready/env-build.md)
 * [上手](start/shang-shou.md)
 * [功能API](function/README.md)
     * [通用GPIO](function/gpio.md)
