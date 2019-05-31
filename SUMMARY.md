@@ -2,6 +2,10 @@
 
 * [简介](README.md)
 * [硬件](hareware_intro.md)
+    - [K210芯片](hardware/k210.md)
+    - [T210核心板](hardware/t210.md)
+    - [Alloy-Eyes开发板](hardware/eyes.md)
+    - [外设配件](hardware/ext.md)
 * [准备](ready/ready.md)
 * [上手](start/shang-shou.md)
 * [功能API](function/README.md)
