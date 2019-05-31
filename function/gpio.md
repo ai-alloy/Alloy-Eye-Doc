@@ -26,4 +26,4 @@ fpioa_set_function(13, FUNC_GPIO0);
 
 ##交流与答疑
 
-欢迎交流,请访问`官网<[http://www.ai-alloy.com](http://www.ai-alloy.com/)>`_
+欢迎交流,请访问 [官网](http://www.ai-alloy.com/) <http://www.ai-alloy.com>
