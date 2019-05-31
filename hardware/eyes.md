@@ -24,7 +24,7 @@
   
   - 底板的贴片图
   
-  [Alloy-Eye开发板硬件资料下载](http://res.ai-alloy.com/AlloyEyes/HDK.rar)
+  - [ ] [Alloy-Eye开发板硬件资料下载](http://res.ai-alloy.com/AlloyEyes/HDK.rar)
 
 #### 外设配件
 
