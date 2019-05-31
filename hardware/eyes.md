@@ -25,9 +25,3 @@
   - 底板的贴片图
   
   - [ ] [Alloy-Eye开发板硬件资料下载](http://res.ai-alloy.com/AlloyEyes/HDK.rar)
-
-#### 外设配件
-
-- 单目/双目摄像头（GC0308）
-- 带触摸屏的LCD屏（2.8寸）
-- Speaker喇叭
