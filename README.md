@@ -10,7 +10,7 @@ Alloy Eyes是一款基于T210核心板（主控芯片为K210）用于人脸检�
     * [外设配件](hardware/ext.md)
 * [准备](ready/ready.md)
 * [上手](start/shang-shou.md)
-* [功能API](function/README.md)
+* [API](function/README.md)
     * [通用GPIO](function/gpio.md)
     * [多功能FPIOA](function/fpioa.md)
 * [其它](other/qi-ta.md)
