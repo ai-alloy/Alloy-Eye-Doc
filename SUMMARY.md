@@ -15,7 +15,7 @@
     - [代码编译](start/complier.md)
     - [下载固件到开发板](start/download.md)
     - [调试](start/debug.md)
-* [功能API](function/README.md)
+* [功能API](api-intro.md)
     * [通用GPIO](function/gpio.md)
     * [多功能FPIOA](function/fpioa.md)
 * [其它](other/qi-ta.md)
