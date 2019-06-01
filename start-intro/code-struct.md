@@ -1,6 +1,8 @@
+# 代码结构
+
 如下图为SDK的代码目录：
 
-![](/images/sdk-tree.png)
+![](../.gitbook/assets/sdk-tree.png)
 
 说明：
 

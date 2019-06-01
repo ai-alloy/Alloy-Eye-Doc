@@ -1,12 +1,14 @@
-在src目录下新建项目文件夹，比如新建hello_world，在此文件下放置源代码
+# 开始第一份代码
 
-cd src && mkdir hello_world
+在src目录下新建项目文件夹，比如新建hello\_world，在此文件下放置源代码
 
-![](/images/first-code.png)
+cd src && mkdir hello\_world
 
-添加源代码入口文件是main.c，入口函数为main()
+![](../.gitbook/assets/first-code.png)
 
-```
+添加源代码入口文件是main.c，入口函数为main\(\)
+
+```text
 int core1_function(void *ctx)
 {
     uint64_t core = current_coreid();
@@ -22,3 +24,4 @@ int main()
     while(1);
 }
 ```
+
