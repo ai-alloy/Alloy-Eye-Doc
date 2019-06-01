@@ -1,6 +1,6 @@
 支持linux和windows下下载固件到开发板。
 
-**A、linux环境下：**
+#### linux环境下：
 
 1、用Type-C连接开发板和电脑；
 
@@ -32,7 +32,7 @@
 
 ​	![](/images/linux-flash-1.png)
 
-**B、windows环境下：**
+#### windows环境下：
 
 1、用Type-C连接开发板和电脑
 

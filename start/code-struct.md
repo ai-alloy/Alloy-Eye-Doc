@@ -1,4 +1,8 @@
+如下图为SDK的代码目录：
+
 ![](/images/sdk-tree.png)
+
+说明：
 
 build:编译中间件、固件、编译脚本存放处；
 
@@ -8,9 +12,9 @@ face-module-sdk:人脸识别支持库；
 
 fat-fs-module：文件系统支持库；
 
-lds:编译连接文件；
+lds:编译链接文件；
 
-lib:官方原代码；
+lib:官方库文件；
 
 src:项目代码存放处；
 
