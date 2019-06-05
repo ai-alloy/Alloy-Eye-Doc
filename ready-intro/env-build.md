@@ -26,7 +26,7 @@ sudo pip3 install pyserial
 
 完整的SDK代码需通过以下方式获取。
 
-* [ ] [获取SDK](http://www.ai-alloy.com/)
+* [ ] [获取SDK](https://github.com/ai-alloy/alloyTi.git)
 
 github会有提供相关样例，包括src目录和build目录，但不是完整的SDK，build目录的是已经根据src对应目录编译的最终文件，直接下载对应的bin文件到开发板可直接跑。
 
