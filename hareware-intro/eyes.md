@@ -18,6 +18,6 @@
 * **相关资料**
   * 底板pdf的原理图
   * 底板的贴片图
-  * [ ] [Alloy-Eyes开发板硬件资料下载](http://res.ai-alloy.com/AlloyEyes/HDK.zip)
+  * [ ] [Alloy-Eyes开发板硬件资料下载](http://www.ai-alloy.com/download.html)
   * [ ] [Alloy-Eyes开发板购买链接](https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.a7a21debWBBg08&ft=t&id=596369309946)
 
