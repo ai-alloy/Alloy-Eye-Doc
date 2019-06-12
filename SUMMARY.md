@@ -14,7 +14,7 @@
   * [开始第一份代码](start-intro/first-code.md)
   * [代码编译](start-intro/complier.md)
   * [下载固件到开发板](start-intro/download.md)
-  * [调试](start-intro/debug.md)
+  * [串口调试](start-intro/debug.md)
 * [功能API](api-intro/README.md)
   * [通用GPIO](api-intro/gpio.md)
   * [多功能FPIOA](api-intro/fpioa.md)
