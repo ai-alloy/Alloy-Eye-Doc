@@ -7,13 +7,9 @@
 1. k210开发板
 2. jtag调试器
 
-
-
 ## 软件准备
 
 1. openocd，[下载地址](https://github.com/kendryte/openocd-kendryte/releases/tag/v0.2.3) ，根据自己的电脑系统选择对应的版本下载，这里以linux版本进行讲解，win下面请参照讲解自行调试，不另外讲解。
-
-   
 
 2. gdb，一般linux系统会自带
 
@@ -41,7 +37,7 @@
 
 openocd 文件夹内容如下
 
-![](images/openocd.png)
+![](/images/openocd.png)
 
 bin文件夹为openocd执行文件
 
