@@ -2,7 +2,7 @@
 
 * **开发板**
 
-  ![](../.gitbook/assets/alloy-eye.png)
+  ![](../.gitbook/assets/alloy-eyes.jpg)
 
 * **资源**
   * 核心板T210
