@@ -6,9 +6,9 @@ description: 开发板默认带部分外设，使用者可以通过扩展接口�
 
   ![](../.gitbook/assets/pj-w.png)
 
-* 单目/双目摄像头（GC0308）
+* 双目摄像头
 * 带触摸屏的LCD屏（2.8寸）
-* Speaker喇叭
+* 红外补光板
 
 
 
