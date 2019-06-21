@@ -6,5 +6,5 @@ Alloy-eyes是一款基于嵌入式深度学习视觉算法、基于T210核心板
 
 可用于人脸门禁考勤、玻璃门锁、智能机器人等多种应用场景。
 
-文档：https://wiki.ai-alloy.com/
+文档：[https://wiki.ai-alloy.com/](https://wiki.ai-alloy.com/)
 

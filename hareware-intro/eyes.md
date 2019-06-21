@@ -17,7 +17,6 @@
   * 扩展口
   * 以太网（保留）
 * **相关资料**
-  
-  - [Alloy-Eyes开发板资料下载](http://www.ai-alloy.com/download.html)
-  - [Alloy-Eyes开发板购买链接](https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.a7a21debWBBg08&ft=t&id=596369309946)
+  * [Alloy-Eyes开发板资料下载](http://www.ai-alloy.com/download.html)
+  * [Alloy-Eyes开发板购买链接](https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.a7a21debWBBg08&ft=t&id=596369309946)
 
