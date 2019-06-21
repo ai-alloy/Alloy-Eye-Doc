@@ -19,8 +19,10 @@ fpioa_set_function(13, FUNC_GPIO0);
 ### gpio\_init
 
 > 初始化 GPIO。
-
-### gpio\_deinit
-
-> 释放GPIO资源。
+>
+> 函数原型： int gpio_init(void)
+>
+> 返回值：0	成功
+>
+> ​			   非0 	失败
 
