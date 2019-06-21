@@ -21,7 +21,9 @@ fpioa_set_function(13, FUNC_GPIO0);
 > 描述：初始化 GPIO。
 函数原型： int gpio_init(void)
 >
-> 返回值：0	成功
+> 返回值：
 >
-> ​				非0	失败
+> 0	成功
+>
+> 非0	失败
 
