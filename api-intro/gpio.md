@@ -19,12 +19,16 @@ fpioa_set_function(13, FUNC_GPIO0);
 ### gpio\_init
 
 > **描述**：初始化 GPIO
-
->**函数原型**： int gpio_init(void)
-> 
->**返回值**：
-> 
->0	成功
-> 
-非0	失败
+>
+> **函数原型**： int gpio_init(void)
+>
+> **参数**：
+>
+> 无
+>
+> **返回值**：
+>
+> 0	成功
+>
+> 非0	失败
 
