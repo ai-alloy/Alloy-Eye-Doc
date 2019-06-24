@@ -316,4 +316,5 @@ A、高电平输入电流
 
 ## 参考例程
 
-​		参考/src/gpio_led、参考/src/gpiohs_io_key
+​		参考/src/gpio_led、/src/gpiohs_io_key
+
