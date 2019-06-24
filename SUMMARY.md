@@ -17,7 +17,8 @@
   * [串口调试](start-intro/debug.md)
   * [JTAG调试](start-intro/jtag.md)
 * [功能API](api-intro/README.md)
-  * [通用GPIO](api-intro/gpio.md)
-  * [多功能FPIOA](api-intro/fpioa.md)
+  * [GPIO](api-intro/gpio.md)
+  * [GPIOHS](api-intro/gpiohs.md)
+  * [FPIOA](api-intro/fpioa.md)
 * [联系](about.md)
 
