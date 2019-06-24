@@ -24,5 +24,6 @@
   * [RTC](api-intro/rtc.md)
   * [PWM](api-intro/pwm.md)
   * [UART](api-intro/uart.md)
+  * [WDT](api-intro/wdt.md)
 * [联系](about.md)
 
