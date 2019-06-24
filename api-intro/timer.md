@@ -30,7 +30,6 @@ description:  硬件定时器
 >
 > 无
 >
-> 非0： 失败
 
 ### 2、timer_set_interval
 
@@ -74,9 +73,7 @@ description:  硬件定时器
 >
 >**返回值**：
 >
->0： 成功
->
->非0：失败
+>无
 
 ### 4、timer_irq_register
 
