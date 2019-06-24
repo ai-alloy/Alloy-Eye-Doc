@@ -21,5 +21,6 @@
   * [GPIOHS](api-intro/gpiohs.md)
   * [FPIOA](api-intro/fpioa.md)
   * [TIMER](api-intro/timer.md)
+  * [RTC](api-intro/rtc.md)
 * [联系](about.md)
 
