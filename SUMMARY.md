@@ -23,6 +23,6 @@
   * [TIMER](api-intro/timer.md)
   * [RTC](api-intro/rtc.md)
   * [PWM](api-intro/pwm.md)
-  * [PWM](api-intro/uart.md)
+  * [UART](api-intro/uart.md)
 * [联系](about.md)
 
