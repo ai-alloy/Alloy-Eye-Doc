@@ -1,4 +1,4 @@
-# 通用高速输入/输出(GPIOHS)
+description:  通用高速输入/输出(GPIOHS)
 
 ## 功能说明
 
