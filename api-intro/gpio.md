@@ -16,7 +16,7 @@ fpioa_set_function(13, FUNC_GPIO0);
 
 ## API说明
 
-### gpio\_init
+### 1、gpio\_init
 
 > **描述**：初始化 GPIO
 >
@@ -32,3 +32,94 @@ fpioa_set_function(13, FUNC_GPIO0);
 >
 > 非0	失败
 
+### 2、gpio_set_drive_mode
+
+> **描述**：设置GPIO驱动模式
+>
+> **函数原型**：
+>
+> ```
+> void gpio_set_drive_mode(uint8_t pin, gpio_drive_mode_t mode)
+> ```
+>
+> **参数**：
+>
+> pin：GPIO管脚（IN）
+>
+> mode： GPIO驱动模式（IN）
+>
+> **返回值**：
+>
+> 无
+
+### 3、gpio_set_pin
+
+>**描述**：设置GPIO的管脚值
+>
+>**函数原型**：
+>
+>```
+>void gpio_set_pin(uint8_t pin, gpio_pin_value_t value)
+>```
+>
+>**参数**：
+>
+>pin：GPIO 管脚值(IN)
+>
+>value：GPIO值(IN)
+>
+>**返回值**：
+>
+>无
+
+### 4、gpio_get_pin
+
+>**描述**：获取GPIO的管脚值
+>
+>**函数原型**：
+>
+>```
+>gpio_pin_value_t gpio_get_pin(uint8_t pin)
+>```
+>
+>**参数**：
+>
+>无
+>
+>value：GPIO值(IN)
+>
+>**返回值**：
+>
+>获取的GPIO管脚值
+
+## 数据类型
+
+### 1、gpio_drive_mode_t
+
+​	描述：GPIO的驱动模式
+
+​	定义：
+
+​    类型：
+
+​			GPIO_DM_INPUT 	输入
+
+​			GPIO_DM_INPUT_PULL_DOWN	输入下拉
+
+​			GPIO_DM_INPUT_PULL_UP	输入上拉
+
+​			GPIO_DM_OUTPUT	输出
+
+### 2、gpio_pin_value_t
+
+​	描述：GPIO值
+
+​	类型：
+
+​			GPIO_PV_LOW	低
+
+​			GPIO_PV_HIGH	高
+
+## 参考例程
+
+​		参考/src/gpio_led
