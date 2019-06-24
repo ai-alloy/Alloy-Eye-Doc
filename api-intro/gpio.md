@@ -98,8 +98,6 @@ fpioa_set_function(13, FUNC_GPIO0);
 
 ​	描述：GPIO的驱动模式
 
-​	定义：
-
 ​    类型：
 
 ​			GPIO_DM_INPUT 	输入
