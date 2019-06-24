@@ -22,5 +22,6 @@
   * [FPIOA](api-intro/fpioa.md)
   * [TIMER](api-intro/timer.md)
   * [RTC](api-intro/rtc.md)
+  * [PWM](api-intro/pwm.md)
 * [联系](about.md)
 
