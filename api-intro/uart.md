@@ -180,9 +180,8 @@ description:  通用异步收发传输器
 >
 >**返回值：**
 >
->0： 成功
+>无
 >
->非0：失败
 
 ### 8、uart_receive_data_dma_irq
 
