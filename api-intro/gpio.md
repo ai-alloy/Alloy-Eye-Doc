@@ -1,4 +1,6 @@
-# 通用GPIO
+---
+description:  通用输入/输出(GPIO)
+---
 
 ## 功能说明
 
