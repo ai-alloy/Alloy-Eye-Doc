@@ -2,7 +2,7 @@
 
 ## 功能说明
 
-系统支持8个通用GPIO ，均支持FPOTA方式将外设管脚映射到GPIO上。
+系统支持8个通用GPIO，均支持FPOTA方式将外设管脚映射到GPIO上。
 
 * 可配置上下拉驱动模式
 * 可配置输入输出信号
@@ -20,7 +20,11 @@ fpioa_set_function(13, FUNC_GPIO0);
 
 > **描述**：初始化 GPIO
 >
-> **函数原型**： int gpio_init(void)
+> **函数原型**：
+>
+> ```
+> int gpio_init(void)
+> ```
 >
 > **参数**：
 >
@@ -85,8 +89,6 @@ fpioa_set_function(13, FUNC_GPIO0);
 >**参数**：
 >
 >无
->
->value：GPIO值(IN)
 >
 >**返回值**：
 >
