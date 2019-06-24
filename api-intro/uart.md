@@ -212,7 +212,7 @@ description:  通用异步收发传输器
 >
 >**返回值：**
 >
->无
+>无 
 >
 
 ### 9、uart_irq_register
