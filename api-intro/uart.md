@@ -241,7 +241,6 @@ description:  通用异步收发传输器
 >
 >无
 >
->非0：失败
 
 ### 10、uart_irq_unregister
 
