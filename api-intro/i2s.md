@@ -247,8 +247,6 @@ I2S 标准总线定义了三种信号：时钟信号BCK、声道选择信号WS �
 >0： 禁用
 ><0： 失败
 
-### 10、fpioa_get_io_driving
-
 ## 数据类型
 
 ### 1、i2s_device_number_t
