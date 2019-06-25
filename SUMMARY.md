@@ -17,7 +17,7 @@
   * [串口调试](start-intro/debug.md)
   * [JTAG调试](start-intro/jtag.md)
 * [功能API](api-intro/README.md)
-  * [GPIO [main.c](..\sdk\my-k210-sdk\src\play_pcm\main.c) ](api-intro/gpio.md)
+  * [GPIO ](api-intro/gpio.md)
   * [GPIOHS](api-intro/gpiohs.md)
   * [FPIOA](api-intro/fpioa.md)
   * [TIMER](api-intro/timer.md)
