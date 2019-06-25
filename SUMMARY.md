@@ -26,5 +26,6 @@
   * [UART](api-intro/uart.md)
   * [WDT](api-intro/wdt.md)
   * [I2S](api-intro/i2s.md)
+  * [I2C](api-intro/i2c.md)
 * [联系](about.md)
 
