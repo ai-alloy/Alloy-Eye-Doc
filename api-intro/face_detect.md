@@ -1,5 +1,5 @@
 ---
-description:  人脸识别功能实现（NO GUI）
+description:  人脸识别功能实现（不带GUI）
 ---
 
 ## 功能描述
