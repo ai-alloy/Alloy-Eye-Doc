@@ -21,4 +21,4 @@ description:  静态图片显示
 
 ## 参考例程
 
-​		参考/src/lcd_rtp
+​		参考/src/lcd_image
