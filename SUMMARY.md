@@ -33,5 +33,6 @@
   * [LCD_IMAGE](api-intro/lcd_image.md)
   * [LCD_DUAL_SENSOR](api-intro/dvp_dual_sensor.md)
   * [FACE_DETECT(NO GUI)](api-intro/face_detect.md)
+  * [FACE_DETECT_GUI](api-intro/face_detect_gui.md)
 * [联系](about.md)
 
