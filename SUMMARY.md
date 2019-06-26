@@ -31,7 +31,7 @@
   * [LCD_RTP](api-intro/lcd_rtp.md)
   * [LCD_CTP](api-intro/lcd_ctp.md)
   * [LCD_IMAGE](api-intro/lcd_image.md)
-  * [LCD_DUAL_SENSOR](api-intro/dvp_dual_sensor.md)
+  * [DVP_DUAL_SENSOR](api-intro/dvp_dual_sensor.md)
   * [FACE_DETECT_NOGUI](api-intro/face_detect.md)
   * [FACE_DETECT_GUI](api-intro/face_detect_gui.md)
 * [联系](about.md)
