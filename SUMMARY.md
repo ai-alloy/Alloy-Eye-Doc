@@ -29,5 +29,6 @@
   * [I2C](api-intro/i2c.md)
   * [SPI](api-intro/spi.md)
   * [LCD_RTP](api-intro/lcd_rtp.md)
+  * [LCD_CTP](api-intro/lcd_ctp.md)
 * [联系](about.md)
 
