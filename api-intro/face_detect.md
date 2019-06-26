@@ -21,5 +21,5 @@ description:  人脸识别功能实现（NO GUI）
 
 ## 参考例程
 
-​		参考/src/lcd_image
+​		参考/src/face_detect
 
