@@ -21,4 +21,4 @@ description:  电阻触摸屏驱动显示
 
 ## 参考例程
 
-​		参考/src/lcd_rtp
+​		参考/src/lcd

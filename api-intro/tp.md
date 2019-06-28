@@ -21,5 +21,5 @@ description:  电容触摸屏驱动显示
 
 ## 参考例程
 
-​		参考/src/lcd_ctp
+​		参考/src/lcd_tp
 
