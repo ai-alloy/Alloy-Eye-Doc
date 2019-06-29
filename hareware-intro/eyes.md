@@ -5,7 +5,7 @@
   ![](../.gitbook/assets/alloy-eyes.png)
 
 * **资源**
-  * 核心板T210
+  * 核心板Fe845
   * 双目摄像头
   * 红外补光板
   * 带触摸的LCD
