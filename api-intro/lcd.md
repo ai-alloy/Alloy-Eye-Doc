@@ -6,11 +6,7 @@ description:  ST7789 SPI LCD Display
 
 DEMO使用ST7789作为LCD的驱动IC，通过SPI方式驱动LCD点屏，主控使用的I80接口8BIT MCU方式。
 
-I80接口连线通常为：CS/，RS/(数据/指令选择），RD/，WR/，RST/，再就是数据线D0-D7了，ST7789的驱动可
-
-以参考st7789.h。
-
-
+I80接口通常为：CS/，RS/(数据/指令选择），RD/，WR/，RST/，再是数据线D0-D7了，ST7789的驱动可以参考st7789.h。
 
 ## 主要函数
 
