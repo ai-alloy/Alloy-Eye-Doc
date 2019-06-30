@@ -274,17 +274,17 @@ I80接口通常为：CS/，RS/(数据/指令选择），RD/，WR/，RST/，再�
 
 ​    		DIR_YX_RLUD = 0x20
 
-   		 DIR_XY_LRUD = 0x40
+​			DIR_XY_LRUD = 0x40
 
-​    		DIR_YX_LRUD = 0x60
+​			DIR_YX_LRUD  = 0x60
 
-   		 DIR_XY_RLDU = 0x80
+​			DIR_XY_RLDU  = 0x80
 
-  		  DIR_YX_RLDU = 0xA0
+​			DIR_YX_RLDU = 0xA0
 
-  		  DIR_XY_LRDU = 0xC0
+​			DIR_XY_LRDU = 0XC0
 
- 		   DIR_YX_LRDU = 0xE0
+​			DIR_YX_LRDU = 0XE0
 
 ## 参考例程
 
