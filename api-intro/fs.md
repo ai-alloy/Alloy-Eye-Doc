@@ -8,7 +8,7 @@ description:  Fat文件系统
 
 文件系统操作flash时，注意可操作的空间大小（目前使用的16Mflash，后8M可用来供用户操作文件系统，前8M为系统使用）。
 
-有兴趣了解可以参考官网：http://elm-chan.org/fsw/ff/00index_e.html
+有兴趣了解更多可以参考官网：http://elm-chan.org/fsw/ff/00index_e.html
 
 ## API说明
 
@@ -26,7 +26,7 @@ description:  Fat文件系统
 >
 > fs： 指向要注册和清除的文件系统对象的指针。空指针取消注册已注册的文件系统对象
 >
-> path：  指向以null结尾的字符串的指针，该字符串指定[逻辑驱动器](http://elm-chan.org/fsw/ff/doc/filename.html)。没有驱动器号的字符串表示默认驱动器
+> path：  指向以null结尾的字符串的指针，该字符串指定逻辑驱动器。没有驱动器号的字符串表示默认驱动器
 >
 > opt：  安装选项。0：现在不安装（安装在第一次访问卷上），1：强制安装卷以检查它是否准备好工作
 >
