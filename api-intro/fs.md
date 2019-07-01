@@ -327,6 +327,7 @@ description:  Fat文件系统
 >
 >FRESULT：返回状态
 >
+
 ### 15、f_stat
 
 >**描述**：检查文件或子目录的存在
@@ -347,6 +348,7 @@ description:  Fat文件系统
 >
 >FRESULT：返回状态
 >
+
 ### 16、f_chmod
 
 >**描述**：更改文件或子目录的属性
