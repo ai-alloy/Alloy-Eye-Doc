@@ -10,23 +10,23 @@ description:  Fat文件系统
 
 ## API说明
 
-### 1、spi_init
+### 1、f_mount
 
-> **描述**：设置SPI 工作模式、多线模式和位宽
+> **描述**：
 >
 > **函数原型**：
 >
 > ```
-> void spi_init(spi_device_num_t spi_num, spi_work_mode_t work_mode, spi_frame_format_t frame_format, size_t data_bit_length, uint32_t endian);
+> FRESULT f_mount (FATFS* fs, const TCHAR* path, BYTE opt)
 > ```
 >
 > **参数**：
 >
-> spi_num： SPI 号（输入）
-> work_mode：  极性相位的四种模式（输入）
-> frame_format：  多线模式（输入）
-> data_bit_length：  单次传输的数据的位宽（输入）
-> endian：  大小端（输入）0：小端 1：大端
+> fs： Pointer to the file system object (NULL:unmount)
+>
+> path：  Logical drive number to be mounted/unmounted
+>
+> opt：  Mode option 0:Do not mount (delayed mount), 1:Mount immediately 
 >
 > **返回值**：
 >
@@ -34,27 +34,17 @@ description:  Fat文件系统
 >
 
 
-### 2、spi_init_non_standard
+### 2、f_open
 
->**描述**：多线模式下设置指令长度、地址长度、等待时钟数、指令地址传输模式
+>**描述**：
 >
 >**函数原型**：
 >
 >```
->void spi_init_non_standard(spi_device_num_t spi_num, uint32_t instruction_length, uint32_t address_length, uint32_t wait_cycles, spi_instruction_address_trans_mode_t instruction_address_trans_mode)
+>FRESULT f_open (FIL* fp, const TCHAR* path, BYTE mode);
 >```
 >
 >**参数**：
->
->spi_num： SPI 号（输入）
->
->instruction_length： 发送指令的位数（输入）
->
->address_length： 发送地址的位数（输入）
->
->wait_cycles： 等待时钟个数（输入）
->
->instruction_address_trans_mode： 指令地址传输的方式（输入）
 >
 >**返回值**：
 >
@@ -62,60 +52,34 @@ description:  Fat文件系统
 >
 
 
-### 3、spi_send_data_standard
+### 3、f_close
 
->**描述**：SPI 标准模式通过CPU传输数据
+>**描述**：
 >
 >**函数原型**：
 >
 >```
->void spi_send_data_standard(spi_device_num_t spi_num, spi_chip_select_t chip_select, const uint8_t *cmd_buff,size_t cmd_len, const uint8_t *tx_buff, size_t tx_len)
+>FRESULT f_close (FIL* fp)
 >```
 >
 >**参数**：
->
->spi_num： SPI 号（输入）
->
->chip_select： 片选信号（输入）
->
->cmd_buff： 外设指令地址数据（输入），没有则设为NULL 
->
->cmd_len： 外设指令地址数据长度（输入），没有则设为0 
->
->tx_buff： 发送的数据（输入）
->
->tx_len： 发送数据的长度（输入）
 >
 >**返回值**：
 >
 >无
 >
 
-### 4、spi_send_data_standard_dma
+### 4、f_read
 
->**描述：**SPI 标准模式下使用DMA 传输数据
+>**描述：**
 >
 >**函数原型：**
 >
 >```
->void spi_send_data_standard_dma(dmac_channel_number_t channel_num, spi_device_num_t spi_num,spi_chip_select_t chip_select, const uint8_t *cmd_buff, size_t cmd_len, const uint8_t *tx_buff, size_t tx_len);
+>FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br)
 >```
 >
 >**参数：**
->
->channel_num： DMA 通道号（输入）
->
->spi_num： SPI 号（输入）
->
->chip_select： 片选信号（输入）
->
->cmd_buff： 外设指令地址数据，没有则设为NULL （输入）
->
->cmd_len： 外设指令地址数据长度，没有则设为0 （输入）
->
->tx_buff： 发送的数据（输入）
->
->tx_len： 发送数据的长度（输入）
 >
 >**返回值：**
 >
@@ -123,29 +87,17 @@ description:  Fat文件系统
 >
 
 
-### 5、spi_receive_data_standard
+### 5、f_write
 
->**描述：**标准模式下通过CPU接收数据。
+>**描述：**
 >
 >**函数原型：**
 >
 >```
->void spi_receive_data_standard(spi_device_num_t spi_num, spi_chip_select_t chip_select, const uint8_t *cmd_buff,size_t cmd_len, uint8_t *rx_buff, size_t rx_len)
+>FRESULT f_write (FIL* fp, const void* buff, UINT btw, UINT* bw)
 >```
 >
 >**参数：**
->
->spi_num： SPI 号（输入）
->
->chip_select： 片选信号（输入）
->
->cmd_buff： 外设指令地址数据（输入），没有则设为NULL 
->
->cmd_len： 外设指令地址数据长度（输入），没有则设为0 
->
->rx_buff： 接收的数据（输出）
->
->rx_len： 接收数据的长度（输入）
 >
 >**返回值：**
 >
@@ -153,36 +105,17 @@ description:  Fat文件系统
 >
 
 
-### 6、spi_receive_data_standard_dma
+### 6、f_lseek
 
->**描述：**标准模式下通过DMA 接收数据
+>**描述：**
 >
 >**函数原型：**
 >
 >```
->void spi_receive_data_standard_dma(dmac_channel_number_t dma_send_channel_num,
->	dmac_channel_number_t dma_receive_channel_num,spi_device_num_t spi_num, 		
->	spi_chip_select_t chip_select, const uint8_t *cmd_buff,
->	size_t cmd_len, uint8_t *rx_buff, size_t rx_len)
+>FRESULT f_lseek (FIL* fp, FSIZE_t ofs)
 >```
 >
 >**参数：**
->
->dma_send_channel_num： 发送指令地址使用的DMA 通道号（输入）
->
->dma_receive_channel_num： 接收数据使用的DMA 通道号（输入）
->
->spi_num： SPI 号（输入）
->
->chip_select： 片选信号（输入）
->
->cmd_buff： 外设指令地址数据（输入），没有则设为NULL 
->
->cmd_len： 外设指令地址数据长度（输入），没有则设为0 
->
->rx_buff： 接收的数据（输出）
->
->rx_len： 接收数据的长度（输入）
 >
 >**返回值：**
 >
@@ -190,29 +123,17 @@ description:  Fat文件系统
 >
 
 
-### 7、spi_send_data_multiple
+### 7、f_sync
 
->**描述：**多线模式发送数据
+>**描述：**
 >
 >**函数原型：**
 >
 >```
->void spi_send_data_multiple(spi_device_num_t spi_num, spi_chip_select_t chip_select, const uint32_t *cmd_buff,size_t cmd_len, const uint8_t *tx_buff, size_t tx_len)
+>FRESULT f_sync (FIL* fp)
 >```
 >
 >**参数：**
->
->spi_num： SPI 号（输入）
->
->chip_select： 片选信号（输入）
->
->cmd_buff： 外设指令地址数据（输入），没有则设为NULL
->
->cmd_len： 外设指令地址数据长度（输入），没有则设为0 
->
->tx_buff： 发送的数据（输入）
->
->tx_len： 发送数据的长度（输入）
 >
 >**返回值：**
 >
@@ -220,60 +141,34 @@ description:  Fat文件系统
 >
 
 
-### 8、spi_send_data_multiple_dma
+### 8、f_opendir
 
->**描述：**多线模式使用DMA 发送数据
+>**描述：**
 >
 >**函数原型：**
 >
 >```
->void spi_send_data_multiple_dma(dmac_channel_number_t channel_num, spi_device_num_t spi_num,spi_chip_select_t chip_select,const uint32_t *cmd_buff, size_t cmd_len, const uint8_t *tx_buff, size_t tx_len)
+>FRESULT f_opendir (DIR* dp, const TCHAR* path)
 >```
 >
 >**参数：**
->
->channel_num： DMA 通道号（输入）
->
->spi_num： SPI 号（输入）
->
->chip_selec：t 片选信号（输入）
->
->cmd_buff： 外设指令地址数据（输入），没有则设为NULL 
->
->cmd_len： 外设指令地址数据长度（输入），没有则设为0 
->
->tx_buff： 发送的数据（输入）
->
->tx_len： 发送数据的长度（输入）
 >
 >**返回值：**
 >
 >无
 >
 
-### 9、spi_receive_data_multiple
+### 9、f_closedir
 
->**描述：**多线模式接收数据
+>**描述：**
 >
 >**函数原型：**
 >
 >```
->void spi_receive_data_multiple(spi_device_num_t spi_num, spi_chip_select_t chip_select, const uint32_t *cmd_buff,size_t cmd_len, uint8_t *rx_buff, size_t rx_len);
+>FRESULT f_closedir (DIR* dp)
 >```
 >
 >**参数：**
->
->spi_num：  SPI 号（输入）
->
->chip_select：  片选信号（输入）
->
->cmd_buff：  外设指令地址数据（输入），没有则设为NULL 
->
->cmd_len：  外设指令地址数据长度（输入），没有则设为0 
->
->rx_buff：  接收的数据（输出）
->
->rx_len：  接收数据的长度（输入）
 >
 >**返回值：**
 >
@@ -281,118 +176,119 @@ description:  Fat文件系统
 >
 
 
-### 10、spi_receive_data_multiple_dma
+### 10、f_readdir
 
->**描述：**多线模式通过DMA 接收
+>**描述：**
 >
 >**函数原型：**
 >
 >```
->void spi_receive_data_multiple_dma(dmac_channel_number_t dma_send_channel_num,
->                                   dmac_channel_number_t dma_receive_channel_num,
->                                   spi_device_num_t spi_num, spi_chip_select_t 	
->                                   chip_select, const uint32_t *cmd_buff,
->                                   size_t cmd_len, uint8_t *rx_buff, size_t rx_len)
->```
->
->**参数：**
->
->dma_send_channel_num：  发送指令地址使用的DMA 通道号（输入）
->
->dma_receive_channel_num：  接收数据使用的DMA 通道号（输入）
->
->spi_num：  SPI 号（输入）
->
->chip_select：  片选信号（输入）
->
->cmd_buff：  外设指令地址数据（输入），没有则设为NULL 
->
->cmd_len：  外设指令地址数据长度（输入），没有则设为0 
->
->rx_buff：  接收的数据（输出）
->
->rx_len：  接收数据的长度（输入）
->
+>FRESULT f_readdir (DIR* dp, FILINFO* fno)
+>     ```
+>     
+>     **参数：**
+>     
 >**返回值：**
 >
 >无
 >
 
-### 11、spi_fill_data_dma
+### 11、f_findfirst
 
->**描述**：多线模式通过DMA 接收
+>**描述**：
 >
 >**函数原型：**
 >
 >```
->void spi_fill_data_dma(dmac_channel_number_t channel_num, spi_device_num_t spi_num, 
->spi_chip_select_t chip_select, const uint32_t *tx_buff, size_t tx_len)
+>FRESULT f_findfirst (DIR* dp, FILINFO* fno, const TCHAR* path, const TCHAR* pattern)
 >```
 >
 >**参数**：
 >
->channel_num：  DMA 通道号（输入）
+>**返回值：**
 >
->spi_num：  SPI 号（输入）
+>无
+
+### 12、f_findnext
+
+>**描述**：
 >
->chip_select：  片选信号（输入）
+>**函数原型：**
 >
->tx_buff：  发送的数据, 仅发送tx_buff 这一个数据，不会自动增加（输入）
+>```
+>FRESULT f_findnext (DIR* dp, FILINFO* fno)
+>```
 >
->tx_len：  发送数据的长度（输入）
+>**参数**：
 >
 >**返回值：**
 >
 >无
 
-### 12、spi_send_data_normal_dma
+### 13、f_unlink
 
->**描述**：通过DMA 发送数据。不用设置指令地址。
+>**描述**：
 >
 >**函数原型：**
 >
 >```
->void spi_send_data_normal_dma(dmac_channel_number_t channel_num, spi_device_num_t spi_num,spi_chip_select_t chip_select,const void *tx_buff, size_t tx_len, spi_transfer_width_t spi_transfer_width)
+>FRESULT f_unlink (const TCHAR* path)
 >```
 >
 >**参数**：
->
->channel_num：  DMA 通道号（输入）
->
->spi_num：  SPI 号（输入）
->
->chip_select：  片选信号（输入）
->
->tx_buff：  发送的数据, 仅发送tx_buff 这一个数据，不会自动增加（输入）
->
->tx_len：  发送数据的长度（输入）
->
->spi_transfer_width：  发送数据的位宽（输入）
->
->**返回值：**
->
->无
-
-### 13、spi_set_clk_rate
-
->**描述**：设置SPI 的时钟频率
->
->**函数原型：**
->
->```
->uint32_t spi_set_clk_rate(spi_device_num_t spi_num, uint32_t spi_clk)
->```
->
->**参数**：
->
->spi_num： SPI 号（输入）
->
->spi_clk： 目标SPI 设备的时钟频率（输入）
 >
 >**返回值**：
 >
->设置完后的SPI 设备的时钟频率
+>无
 
+### 14、f_rename
+
+>**描述**：
+>
+>**函数原型：**
+>
+>```
+>FRESULT f_rename (const TCHAR* path_old, const TCHAR* path_new)
+>```
+>
+>**参数**：
+>
+>**返回值**：
+>
+>无
+>
+### 15、f_stat
+
+>**描述**：
+>
+>**函数原型：**
+>
+>```
+>FRESULT f_stat (const TCHAR* path, FILINFO* fno)
+>```
+>
+>**参数**：
+>
+>**返回值**：
+>
+>无
+>
+### 16、f_chmod
+
+>**描述**：
+>
+>**函数原型：**
+>
+>```
+>FRESULT f_chmod (const TCHAR* path, BYTE attr, BYTE mask)
+>```
+>
+>**参数**：
+>
+>**返回值**：
+>
+>无
+>
 ## 数据类型
 
 ## 参考例程
