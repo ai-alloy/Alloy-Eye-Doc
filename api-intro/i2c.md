@@ -200,5 +200,5 @@ typedef struct _i2c_slave_handler
 
 ## 参考例程
 
-​		参考/src/lcd_ctp
+​		参考/src/tp/cst826
 
