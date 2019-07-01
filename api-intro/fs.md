@@ -4,13 +4,9 @@ description:  Fat文件系统
 
 ## 功能描述
 
-SPI 是一种高速的，全双工，同步的通信总线。
+使用文件系统，可以方便的操作flash或外置TF卡，需要做持久化的信息或配置信息，将其保存为文件写入flash或TF卡即可。调用文件系统的api，把数据发送到文件系统，文件系统会决定擦除哪个分区以及存储到哪个分区。
 
-- 独立的SPI 设备封装外设相关参数
-- 自动处理多设备总线争用
-- 支持标准、双线、四线、八线模式
-- 支持先写后读和全双工读写
-- 支持发送一串相同的数据帧，常用于清屏、填充存储扇区等场景
+文件系统操作flash时，注意可操作的空间大小（目前使用的16Mflash，后8M可用来供用户操作文件系统，前8M为系统使用）。
 
 ## API说明
 
@@ -399,60 +395,6 @@ SPI 是一种高速的，全双工，同步的通信总线。
 
 ## 数据类型
 
-### 1、spi_device_num_t
-
-​	描述：SPI 编号
-
-​    类型：
-
-​			SPIDEVICE0： SPI 0 做为主设备			
-
-​			SPIDEVICE1： SPI 1 做为主设备
-
-​			SPIDEVICE2： SPI 2 做为从设备
-
-​			SPIDEVICE3： SPI 3 做为主设备
-
-### 2、spi_mode_t
-
-​	描述：SPI 模式
-
-​	类型：
-
-​			SPI_WORK_MODE_0： SPI 模式0		
-
-​			SPI_WORK_MODE_1： SPI 模式1
-
-​			SPI_WORK_MODE_2： SPI 模式2
-
-​			SPI_WORK_MODE_3： SPI 模式3
-
-### 3、spi_frame_format_t
-
-​	描述：SPI 帧格式
-
-​	类型：
-
-​			SPI_FF_STANDARD： 标准		
-
-​			SPI_FF_DUAL： 双线
-
-​			SPI_FF_QUAD： 四线
-
-​			SPI_FF_OCTAL： 八线（SPI3 不支持）
-
-### 4、spi_instruction_address_trans_mode_t
-
-​	描述：SPI 指令和地址的传输模式
-
-​	类型：
-
-​			SPI_AITM_STANDARD： 均使用标准帧格式
-
-​			SPI_AITM_ADDR_STANDARD： 指令使用配置的值，地址使用标准帧格式
-
-​			SPI_AITM_AS_FRAME_FORMAT： 均使用配置的值	
-
 ## 参考例程
 
-​		参考/src/flash_spi、/src/sd_spi
+​		参考/src/fs
