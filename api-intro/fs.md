@@ -8,7 +8,7 @@ description:  Fat文件系统
 
 文件系统操作flash时，注意可操作的空间大小（目前使用的16Mflash，后8M可用来供用户操作文件系统，前8M为系统使用）。
 
-有兴趣了解更多可以参考官网：http://elm-chan.org/fsw/ff/00index_e.html
+有兴趣了解更多可以参考：http://elm-chan.org/fsw/ff/00index_e.html
 
 ## API说明
 
