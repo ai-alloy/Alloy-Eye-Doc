@@ -2,7 +2,7 @@
 
 * [简介](README.md)
 * [硬件](hareware-intro/README.md)
-  * [K210芯片](hareware-intro/k210.md)
+  * [主芯片](hareware-intro/mainchip.md)
   * [Fe845核心板](hareware-intro/Fe845.md)
   * [Alloy-eyes开发板](hareware-intro/eyes.md)
   * [外设配件](hareware-intro/ext.md)
