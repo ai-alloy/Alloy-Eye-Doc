@@ -28,6 +28,7 @@
   * [I2S](api-intro/i2s.md)
   * [I2C](api-intro/i2c.md)
   * [SPI](api-intro/spi.md)
+  * [FS](api-intro/fs.md)
   * [LCD](api-intro/lcd.md)
   * [TP](api-intro/tp.md)
   * [DVP](api-intro/dvp_dual_sensor.md)
