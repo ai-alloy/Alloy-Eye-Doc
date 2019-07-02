@@ -4,7 +4,7 @@
 * [硬件](hareware-intro/README.md)
   * [主芯片](hareware-intro/mainchip.md)
   * [Fe845核心板](hareware-intro/Fe845.md)
-  * [Alloy-eyes开发板](hareware-intro/eyes.md)
+  * [Alloy-Eyes开发板](hareware-intro/eyes.md)
   * [外设配件](hareware-intro/ext.md)
 * [准备](ready-intro/README.md)
   * [获取开发板](ready-intro/get-board.md)

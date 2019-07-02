@@ -1,4 +1,4 @@
-# Alloy-eyes开发板
+# Alloy-Eyes开发板
 
 * **开发板**
 
