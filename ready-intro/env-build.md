@@ -24,7 +24,7 @@ sudo pip3 install pyserial
 
 github会有提供相关样例，包括src目录和build目录，但不是完整的SDK，build目录的是已经根据src对应目录编译的最终文件，直接下载对应的bin文件到开发板可直接跑。
 
-* [SDK github 下载（非完整）](https://github.com/ai-alloy/scrapy-cookbook)
+* [SDK github 下载（非完整）](https://github.com/ai-alloy/alloy-eyes-sdk)
 * 完整的SDK代码可联系FEA获取
 
 ## 4、获取编译工具链
