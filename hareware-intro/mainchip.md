@@ -30,7 +30,7 @@ AI主芯片定位于人工智能与边缘计算两个领域，主要用于AioT�
     1. 操作系统：FreeRTOS/SylixOS/RTThread/Zephyr等
     2. 网络模型：tinyyolov2/mobilenetv1
     3. 深度学习框架：TensorFlow/TensorFlow Lite/Keras/Darknet
-    4. 外 设：FPIOA、UART、GPIO、SPI、I2C、I2S、WDT、TIMER、RTC
+    4. 外 设：FPIOA、UART、GPIO、SPI、I2C、I2S、WDT、TIMER、RTC ...
   * 功耗
     1. 典型应用场景功耗&lt;1W
     2. 芯片功耗&lt;400mW
