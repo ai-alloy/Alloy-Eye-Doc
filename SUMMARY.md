@@ -35,6 +35,6 @@
   * [LCD_IMAGE](api-intro/lcd_image.md)
   * [FACE_DETECT_NOGUI](api-intro/face_detect.md)
   * [FACE_DETECT_GUI](api-intro/face_detect_gui.md)
-* [注意事项](tips/tips.md)
+* [问题解答](tips/tips.md)
 * [联系](about.md)
 
