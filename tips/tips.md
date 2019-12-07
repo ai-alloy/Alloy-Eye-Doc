@@ -2,6 +2,8 @@
 
 ### 一、开发资料获取
 
+​			1、登录公司[官网](https://www.ai-alloy.com/)中[wiki](https://wiki.ai-alloy.com/)和[下载](https://www.ai-alloy.com/download.html)页可获取开发资料和硬件相关资料。
+
 ### 二、获取SDK
 
 ### 三、如何编译
