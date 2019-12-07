@@ -8,7 +8,9 @@
 
 ​			官网下载的SDK是非完整版本（未带人脸识别算法），完整版本请联系公司业务或FAE获取。			
 
-### 三、如何编译
+### 三、如何搭建开发环境
+
+​		   参考wiki中[开发环境搭建](https://wiki.ai-alloy.com/ready-intro/env-build)。
 
 ### 四、sdk是否带人脸识别算法
 
