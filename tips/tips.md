@@ -2,9 +2,11 @@
 
 ### 一、开发资料获取
 
-​			1、登录公司[官网](https://www.ai-alloy.com/)中[wiki](https://wiki.ai-alloy.com/)页获取开发资料、[下载](https://www.ai-alloy.com/download.html)页获取硬件相关资料。
+​			登录公司[官网](https://www.ai-alloy.com/)中[wiki](https://wiki.ai-alloy.com/)页获取开发资料、[下载](https://www.ai-alloy.com/download.html)页获取HDK和SDK.
 
 ### 二、获取SDK
+
+​			官网下载的SDK是非完整版本（未带人脸识别算法），完整版本请联系公司业务或FAE获取。			
 
 ### 三、如何编译
 
