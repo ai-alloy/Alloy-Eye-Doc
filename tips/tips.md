@@ -12,16 +12,32 @@
 
 ​		   参考wiki中[开发环境搭建](https://wiki.ai-alloy.com/ready-intro/env-build)。
 
-### 四、sdk是否带人脸识别算法
+### 四、SDK是否带人脸识别算法
+
+​		 SDK中带人脸识别算法，以库的形式提供，并提供相应的接口。
 
 ### 五、添加应用后编译报错
 
+​		 下图是用windows系统的IDE编译后报错的截图：
+
+​		    ![](../.gitbook/assets/ram-over-1.png)
+
+![](..\.gitbook\assets\ram-over-2.png)
+
 ### 六、人脸识别算法性能指标
+
+​		    [点击查看](./algorithm-param.md)
 
 ### 七、从服务端导入照片做识别模板
 
-### 八、人脸识别效果
+### 八、是否支持语音播放
 
-### 九、是否支持语音播放
+​			支持，可在开发板接入外置speak，运行/src/play_pcm DEMO,如何外接喇叭可参考开发板的外设连接图。
 
-### 十、人脸识别的流程说明
+### 九、人脸识别的流程说明
+
+### 十、是否有核心板的AD封装格式
+
+​				有，请到HDK/footprint处获取。
+
+​			
