@@ -2,7 +2,9 @@
 
 ### 一、开发资料获取
 
-​			登录公司[官网](https://www.ai-alloy.com/)中[wiki](https://wiki.ai-alloy.com/)页获取开发资料、[下载](https://www.ai-alloy.com/download.html)页获取HDK和SDK.
+​			1、登录公司[官网](https://www.ai-alloy.com/)中[wiki](https://wiki.ai-alloy.com/)页获取开发资料、
+
+​			2、[下载](https://www.ai-alloy.com/download.html)页获取HDK和SDK.
 
 ### 二、获取SDK
 
@@ -22,7 +24,13 @@
 
 ​		    ![](../.gitbook/assets/ram-over-1.png)
 
-![](..\.gitbook\assets\ram-over-2.png)
+1、K210RAM大小为8M，其中2M专门AI用，剩余6M留给应用使用。系统启动时FLASH的固件要加载到RAM执	
+
+​	  行，会占用RAM的空间，还要考虑预留上固件运行时的静态和动态分配所需的大小，因此固件的大小是有限制
+
+​	  的，建议固件大小尽量不要超过4M;
+
+2、在编写固件时，考虑固件大小，如果出现如图所以的错误提示，可能是固件所在内存溢出了。
 
 ### 六、人脸识别算法性能指标
 
@@ -42,7 +50,7 @@
 
 ​	1、提供服务端图片转识别模板的接口，参考facedll.rar，其中IntPtr faceDetectAndConvert(string path)接口		  是将png或jpg格式的图片转成设备端需要的模板格式；
 
-​    2、 实现此功能需要客户结合自己的服务端来实现，仅提供链接库和API接口及使用说明。
+​    2、 实现此功能需要客户结合自己的服务端来实现，仅提供链接库和API接口及使用说明；
 
 ​	3、设备端的应用实现：
 
@@ -52,7 +60,7 @@
 
 ​			C、恢复之后做识别的比分阈值；
 
-​		   设备端的具体实现跨越参考SDK里的src/face_gui_demo。
+​		设备端的具体实现跨越参考SDK里的src/face_gui_demo。
 
 ### 八、是否支持语音播放
 
@@ -60,4 +68,4 @@
 
 ### 九、是否有核心板的AD封装格式
 
-​				有，请到HDK/footprint处获取。
+​			有，请到HDK/footprint处获取。
