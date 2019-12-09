@@ -58,7 +58,7 @@ github会有提供相关样例，包括src目录和build目录，但不是完整
 
 ​		[Windows IDE 下载链接](http://kendryte-ide.s3-website.cn-northwest-1.amazonaws.com.cn/)，如图
 
-​		![](D:\work\ai-alloy\kendryte\文档代码管理（github）\wiki\.gitbook\assets\Windows-IDE-Download.png)
+​		![](D:..\.gitbook\assets\Windows-IDE-Download.png)
 
 #### 2、IDE如何安装和使用
 
