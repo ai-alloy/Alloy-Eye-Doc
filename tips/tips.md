@@ -2,9 +2,9 @@
 
 ### 一、开发资料获取
 
-​			1、登录公司[官网](https://www.ai-alloy.com/)中[wiki](https://wiki.ai-alloy.com/)页获取开发资料、
+​			1、登录公司[官网](https://www.ai-alloy.com/)中[wiki](https://wiki.ai-alloy.com/)页获取开发资料
 
-​			2、[下载](https://www.ai-alloy.com/download.html)页获取HDK和SDK.
+​			2、[HDK/SDK](https://www.ai-alloy.com/download.html)下载
 
 ### 二、获取SDK
 
