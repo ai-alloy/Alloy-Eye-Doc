@@ -1,16 +1,11 @@
 # 代码编译
 
-进入build目录下执行./getbin.sh xxx；xxx指代src下的项目名称，比如项目名称是hello\_world
+##### 一、打开IDE，导入SDK,如下图
 
-执行./getbin.sh hello\_world
+<img src="..\.gitbook\assets\ide-use-1.png" style="zoom: 50%;" />
 
-![](../.gitbook/assets/complier-start.png)
+##### 二、点击编译构建，生成build文件夹，包括中间件和最终生成的下载到设备的固件，点击清除可清除build文件夹，如图
 
-在build目录会生成hello\_world目录，包含最终生成的hello\_world.bin固件，此固件是最终下载到开发板上的。
+​	                                                <img src="..\.gitbook\assets\ide-use-2.png" style="zoom: 50%;" />
 
-![](../.gitbook/assets/complier-end.png)
-
-注意：getbin.sh脚本第7行/opt/my-kendryte-toolchain是编译工具默认路径，此路径必须和编译工具实际放置的位置一致。
-
-![](../.gitbook/assets/get-sh.png)
-
+##### 三、更换编译的工程，可以在kendryte-package.json配置。
