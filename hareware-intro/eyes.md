@@ -2,7 +2,7 @@
 
 * **开发板**
 
-  ![](../.gitbook/assets/alloy-eyes.png)
+  ![](../.gitbook/assets/kaifaban-2.png)
 
 * **资源**
   * 核心板Fe845
