@@ -6,7 +6,7 @@ Alloy-Eyes是一款基于嵌入式深度学习视觉算法、基于Fe845核心�
 
 可用于人脸门禁考勤、玻璃门锁、智能机器人等多种应用场景。
 
-了解更多内容：[https://www.ai-alloy.com/]()
+了解更多内容：https://www.ai-alloy.com/
 
 
 
