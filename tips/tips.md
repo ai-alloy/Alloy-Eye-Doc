@@ -12,7 +12,7 @@
 
 ### 三、如何搭建开发环境
 
-​		   参考wiki中[开发环境搭建](https://wiki.ai-alloy.com/ready-intro/env-build)。
+​		   参考wiki中[开发环境搭建](https://wiki.ai-alloy.com/start-intro/env-build)。
 
 ### 四、SDK是否带人脸识别算法
 
