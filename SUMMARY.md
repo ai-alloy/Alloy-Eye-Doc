@@ -6,8 +6,6 @@
   * [Fe845核心板](hareware-intro/Fe845.md)
   * [Alloy-Eyes开发板](hareware-intro/eyes.md)
   * [外设配件](hareware-intro/ext.md)
-* [获取硬件](ready-intro/README.md)
-  * [获取开发板](ready-intro/get-board.md)
 * [上手](start-intro/README.md)
   * [代码结构](start-intro/code-struct.md)
   * [开发环境搭建](start-intro/env-build.md)
